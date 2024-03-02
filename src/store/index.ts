@@ -5,18 +5,18 @@ const store = createStore({
     return {
       tableData: [
         {
-          id: "050000425651",
-          material: "UP210",
+          id: "111",
+          material: "Material1",
           status: "In Process"
         },
         {
-          id: "050000425652",
-          material: "TP101",
+          id: "222",
+          material: "Material2",
           status: "Not Started"
         },
         {
-          id: "050000425653",
-          material: "TH100",
+          id: "333",
+          material: "Material3",
           status: "In Process"
         },
       ],
