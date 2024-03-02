@@ -5,7 +5,7 @@
             <ion-buttons>
                 <ion-back-button slot="start" default-href="/worklistPage"></ion-back-button>
             </ion-buttons>
-            <ion-title>{{ loadedInspection.inspectionId }}</ion-title>
+            <ion-title>{{ loadedInspection.id }} {{ loadedInspection.id }}</ion-title>
         </ion-toolbar>
     </ion-header>
 

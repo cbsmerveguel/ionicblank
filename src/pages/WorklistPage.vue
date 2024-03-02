@@ -17,17 +17,17 @@
                 <ion-col size="4">Status</ion-col>
             </ion-row>
 
-            <template v-for="(item, index) in tableData" :key="item.inspectionId">
+            <template v-for="(item, index) in inspections" :key="item.id">
                 <!-- <router-link :to="`/worklistPage/${index}`"> -->
-                <router-link :to="`/worklistPage/${item.inspectionId}`">
+                <router-link :to="`/worklistPage/${item.id}`">
                     <ion-row class="line-row">
-                        <ion-col size="4">{{ item.inspectionId }}</ion-col>
+                        <ion-col size="4">{{ item.id }}</ion-col>
                         <ion-col size="4">{{ item.material }}</ion-col>
                         <ion-col size="4">{{ item.status }}</ion-col>
                     </ion-row>
                 </router-link>
 
-                <div class="line" v-if="index < tableData.length - 1"></div>
+                <div class="line" v-if="index < inspections.length - 1"></div>
             </template>
         </ion-grid>
 
@@ -98,8 +98,8 @@ export default {
         IonLabel
     },
     computed: {
-        tableData() {
-            return this.$store.getters.tableData;
+        inspections() {
+            return this.$store.getters.inspections;
         }
     }
 }
